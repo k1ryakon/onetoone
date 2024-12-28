@@ -21,7 +21,7 @@ def create(request):
 
 
 # Изменение данных в БД
-def edit(request, id):
+def peredit(request, id):
     try:
         person = Person.objects.get(id=id)
         if request.method == 'POST':
